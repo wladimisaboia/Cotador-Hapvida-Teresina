@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cotações Hapvida Teresina</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Cotação Hapvida</h2>
+      <form action="/cotacao" method="post">
+        <div class="form-group">
+          <label for="idade">Idade:</label>
+          <input
+            type="text"
+            id="idade"
+            name="idade"
+            placeholder="Digite sua idade (separadas por vírgula)"
+          />
+        </div>
+        <div class="form-group">
+          <label for="plano">Plano:</label>
+          <select id="plano" name="plano">
+              <option value="Selecione o plano">Selecione o plano</option>
+              <option value="ambulatorial (pessoa física) - Coparticipação parcial">Ambulatorial (pessoa física) - Coparticipação parcial</option>
+              <option value="ambulatorial (pessoa física) - Com coparticipação">Ambulatorial (pessoa física) - Com coparticipação</option>
+              <option value="enfermaria com obstetrícia (pessoa física) - Coparticipação parcial">Enfermaria com obstetrícia (pessoa física) - Coparticipação parcial</option>
+              <option value="enfermaria com obstetrícia (pessoa física) - Com coparticipação">Enfermaria com obstetrícia (pessoa física) - Com coparticipação</option>
+              <option value="enfermaria sem obstetrícia (pessoa física) - Coparticipação parcial">Enfermaria sem obstetrícia (pessoa física) - Coparticipação parcial</option>
+              <option value="enfermaria sem obstetrícia (pessoa física) - Com coparticipação">Enfermaria sem obstetrícia (pessoa física) - Com coparticipação</option>
+              <option value="apartamento com obstetrícia (pessoa física) - Coparticipação parcial">Apartamento com obstetrícia (pessoa física) - Coparticipação parcial</option>
+              <option value="apartamento com obstetrícia (pessoa física) - Com coparticipação">Apartamento com obstetrícia (pessoa física) - Com coparticipação</option>
+              <option value="apartamento sem obstetrícia (pessoa física) - Coparticipação parcial">Apartamento sem obstetrícia (pessoa física) - Coparticipação parcial</option>
+              <option value="apartamento sem obstetrícia (pessoa física) - Com coparticipação">Apartamento sem obstetrícia (pessoa física) - Com coparticipação</option>
+              <option value="ambulatorial (pessoa jurídica) - Coparticipação parcial">Ambulatorial (pessoa jurídica) - Coparticipação parcial</option>
+              <option value="ambulatorial (pessoa jurídica) - Com coparticipação">Ambulatorial (pessoa jurídica) - Com coparticipação</option>
+              <option value="enfermaria (pessoa jurídica) - Coparticipação parcial">Enfermaria (pessoa jurídica) - Coparticipação parcial</option>
+              <option value="enfermaria (pessoa jurídica) - Com coparticipação">Enfermaria (pessoa jurídica) - Com coparticipação</option>
+              <option value="apartamento (pessoa jurídica) - Coparticipação parcial">Apartamento (pessoa jurídica) - Coparticipação parcial</option>
+              <option value="apartamento (pessoa jurídica) - Com coparticipação">Apartamento (pessoa jurídica) - Com coparticipação</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Cotar" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
