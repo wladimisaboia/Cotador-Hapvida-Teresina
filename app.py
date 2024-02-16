@@ -19,10 +19,10 @@ def cotar():
     for idade in idades:
         valor = 0
 
-        if plano == 'ambulatorial (pessoa física) - Coparticipação parcial' or plano == 'ambulatorial (pessoa física) - Com coparticipação' or plano == 'enfermaria com obstetrícia (pessoa física) - Coparticipação parcial' or plano == 'enfermaria com obstetrícia (pessoa física) - Com coparticipação' or plano == 'enfermaria sem obstetrícia (pessoa física) - Coparticipação parcial' or plano == 'enfermaria sem obstetrícia (pessoa física) - Com coparticipação' or plano == 'apartamento com obstetrícia (pessoa física) - Coparticipação parcial' or plano == 'apartamento com obstetrícia (pessoa física) - Com coparticipação' or plano == 'apartamento sem obstetrícia (pessoa física) - Coparticipação parcial' or plano == 'apartamento sem obstetrícia (pessoa física) - Com coparticipação':
-            if len(idades) >= 2 and not desconto_aplicado:
-                valor = valor * 0.95
-                desconto_aplicado = True
+        #if plano == 'ambulatorial (pessoa física) - Coparticipação parcial' or plano == 'ambulatorial (pessoa física) - Com coparticipação' or plano == 'enfermaria com obstetrícia (pessoa física) - Coparticipação parcial' or plano == 'enfermaria com obstetrícia (pessoa física) - Com coparticipação' or plano == 'enfermaria sem obstetrícia (pessoa física) - Coparticipação parcial' or plano == 'enfermaria sem obstetrícia (pessoa física) - Com coparticipação' or plano == 'apartamento com obstetrícia (pessoa física) - Coparticipação parcial' or plano == 'apartamento com obstetrícia (pessoa física) - Com coparticipação' or plano == 'apartamento sem obstetrícia (pessoa física) - Coparticipação parcial' or plano == 'apartamento sem obstetrícia (pessoa física) - Com coparticipação':
+            #if len(idades) >= 2 and not desconto_aplicado:
+                #valor = valor * 0.95
+                #desconto_aplicado = True
 
         if plano == 'ambulatorial (pessoa física) - Coparticipação parcial':
             if idade <= 18:
