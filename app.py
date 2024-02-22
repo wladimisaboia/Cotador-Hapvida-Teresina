@@ -19,12 +19,12 @@ def cotar():
     for idade in idades:
         valor = 0
 
-        #if plano == 'ambulatorial (pessoa física) - Coparticipação parcial' or plano == 'ambulatorial (pessoa física) - Com coparticipação' or plano == 'enfermaria com obstetrícia (pessoa física) - Coparticipação parcial' or plano == 'enfermaria com obstetrícia (pessoa física) - Com coparticipação' or plano == 'enfermaria sem obstetrícia (pessoa física) - Coparticipação parcial' or plano == 'enfermaria sem obstetrícia (pessoa física) - Com coparticipação' or plano == 'apartamento com obstetrícia (pessoa física) - Coparticipação parcial' or plano == 'apartamento com obstetrícia (pessoa física) - Com coparticipação' or plano == 'apartamento sem obstetrícia (pessoa física) - Coparticipação parcial' or plano == 'apartamento sem obstetrícia (pessoa física) - Com coparticipação':
-            #if len(idades) >= 2 and not desconto_aplicado:
-                #valor = valor * 0.95
-                #desconto_aplicado = True
+        if plano == 'ambulatorial (pessoa física) - Sem coparticipação, exceto terapias' or plano == 'ambulatorial (pessoa física) - Com coparticipação' or plano == 'enfermaria com obstetrícia (pessoa física) - Sem coparticipação, exceto terapias' or plano == 'enfermaria com obstetrícia (pessoa física) - Com coparticipação' or plano == 'enfermaria sem obstetrícia (pessoa física) - Sem coparticipação, exceto terapias' or plano == 'enfermaria sem obstetrícia (pessoa física) - Com coparticipação' or plano == 'apartamento com obstetrícia (pessoa física) - Sem coparticipação, exceto terapias' or plano == 'apartamento com obstetrícia (pessoa física) - Com coparticipação' or plano == 'apartamento sem obstetrícia (pessoa física) - Sem coparticipação, exceto terapias' or plano == 'apartamento sem obstetrícia (pessoa física) - Sem coparticipação, exceto terapias':
+            if len(idades) >= 2 and not desconto_aplicado:
+                valor = valor * 0.95
+                desconto_aplicado = True
 
-        if plano == 'ambulatorial (pessoa física) - Coparticipação parcial':
+        if plano == 'ambulatorial (pessoa física) - Sem coparticipação, exceto terapias':
             if idade <= 18:
                 valor = 112.45
             elif idade <= 23:
@@ -66,7 +66,7 @@ def cotar():
                 valor = 426.33
             else:
                 valor = 553.79
-        elif plano == 'enfermaria com obstetrícia (pessoa física) - Coparticipação parcial':
+        elif plano == 'enfermaria com obstetrícia (pessoa física) - Sem coparticipação, exceto terapias':
             if idade <= 18:
                 valor = 168.05
             elif idade <= 23:
@@ -108,7 +108,7 @@ def cotar():
                 valor = 638.35
             else:
                 valor = 829.42
-        elif plano == 'enfermaria sem obstetrícia (pessoa física) - Coparticipação parcial':
+        elif plano == 'enfermaria sem obstetrícia (pessoa física) - Sem coparticipação, exceto terapias':
             if idade <= 18:
                 valor = 131.84
             elif idade <= 23:
@@ -150,7 +150,7 @@ def cotar():
                 valor = 499.91
             else:
                 valor = 649.45
-        elif plano == 'apartamento com obstetrícia (pessoa física) - Coparticipação parcial':
+        elif plano == 'apartamento com obstetrícia (pessoa física) - Sem coparticipação, exceto terapias':
             if idade <= 18:
                 valor = 190.03
             elif idade <= 23:
@@ -192,7 +192,7 @@ def cotar():
                 valor = 722.35
             else:
                 valor = 938.62
-        elif plano == 'apartamento sem obstetrícia (pessoa física) - Coparticipação parcial':
+        elif plano == 'apartamento sem obstetrícia (pessoa física) - Sem coparticipação, exceto terapias':
             if idade <= 18:
                 valor = 170.96
             elif idade <= 23:
@@ -234,7 +234,7 @@ def cotar():
                 valor = 660.71
             else:
                 valor = 858.49
-        elif plano == 'ambulatorial (pessoa jurídica) - Coparticipação parcial':
+        elif plano == 'ambulatorial (pessoa jurídica) - Sem coparticipação, exceto terapias':
             if idade <= 18:
                 valor = 103.33
             elif idade <= 23:
@@ -276,7 +276,7 @@ def cotar():
                 valor = 438.06
             else:
                 valor = 490.63
-        elif plano == 'enfermaria (pessoa jurídica) - Coparticipação parcial':
+        elif plano == 'enfermaria (pessoa jurídica) - Sem coparticipação, exceto terapias':
             if idade <= 18:
                 valor = 125.68
             elif idade <= 23:
@@ -318,7 +318,7 @@ def cotar():
                 valor = 532.34
             else:
                 valor = 596.22
-        elif plano == 'apartamento (pessoa jurídica) - Coparticipação parcial':
+        elif plano == 'apartamento (pessoa jurídica) - Sem coparticipação, exceto terapias':
             if idade <= 18:
                 valor = 187.76
             elif idade <= 23:
