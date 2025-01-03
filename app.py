@@ -272,25 +272,25 @@ def cotar():
                 valor = 490.63
         elif plano == 'enfermaria (pessoa jurídica) - Sem coparticipação, exceto terapias':
             if idade <= 18:
-                valor = 125.68
+                valor = 141.91
             elif idade <= 23:
-                valor = 140.76
+                valor = 186.13
             elif idade <= 28:
-                valor = 157.65
+                valor = 213.49
             elif idade <= 33:
-                valor = 181.30
+                valor = 238.66
             elif idade <= 38:
-                valor = 208.50
+                valor = 250.41
             elif idade <= 43:
-                valor = 248.12
+                valor = 282.48
             elif idade <= 48:
-                valor = 310.15
+                valor = 343.81
             elif idade <= 53:
-                valor = 387.69
+                valor = 473.05
             elif idade <= 58:
-                valor = 659.07
+                valor = 637.32
             else:
-                valor = 738.16
+                valor = 827.40
         elif plano == 'enfermaria (pessoa jurídica) - Com coparticipação':
             if idade <= 18:
                 valor = 101.52
