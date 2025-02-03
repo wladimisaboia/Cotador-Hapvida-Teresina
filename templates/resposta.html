@@ -10,7 +10,7 @@
   <body>
     <div class="container">
     <div class="header">
-      <img src="{{ url_for('static', filename='hap.png') }}" alt="Logo" />
+      <img src="{{ url_for('static', filename='img/hap.png') }}" alt="Logo" />
     </div>
     <div class="container">
       <h2>Cotação Hapvida</h2>
@@ -19,14 +19,14 @@
         <!-- Benefícios -->
         <div class="beneficios">
           <h3>Benefícios do plano {{ plano_selecionado }}:</h3>
-          {% if plano_selecionado == 'enfermaria com obstetrícia (pessoa física) - Sem coparticipação, exceto terapias' or plano_selecionado == 'enfermaria com obstetrícia (pessoa física) - Com coparticipação' or plano_selecionado == 'enfermaria sem obstetrícia (pessoa física) - Sem coparticipação, exceto terapias' or plano_selecionado == 'enfermaria sem obstetrícia (pessoa física) - Com coparticipação' or plano_selecionado == 'apartamento com obstetrícia (pessoa física) - Sem coparticipação, exceto terapias' or plano_selecionado == 'apartamento com obstetrícia (pessoa física) - Com coparticipação' or plano_selecionado == 'apartamento sem obstetrícia (pessoa física) - Sem coparticipação, exceto terapias' or plano_selecionado == 'apartamento sem obstetrícia (pessoa física) - Com coparticipação'%}
+          {% if plano_selecionado == 'enfermaria (pessoa física) - Sem coparticipação, exceto terapias' or plano_selecionado == 'enfermaria (pessoa física) - Com coparticipação' or plano_selecionado == 'nosso medico enfermaria (pessoa física) - Sem coparticipação, exceto terapias' or plano_selecionado == 'nosso medico enfermaria (pessoa física) - Com coparticipação' or plano_selecionado == 'apartamento (pessoa física) - Sem coparticipação, exceto terapias' or plano_selecionado == 'apartamento (pessoa física) - Com coparticipação' or plano_selecionado == 'nosso medico apartamento (pessoa física) - Sem coparticipação, exceto terapias' or plano_selecionado == 'nosso medico apartamento (pessoa física) - Com coparticipação'%}
           <ul>
             <li><span>Urgência e emergência</span></li>
             <li><span>Consultas</span></li>
             <li><span>Exames</span></li>
-            <li><span>Odonto urgente</span></li>
             <li><span>Internações</span></li>
             <li><span>Cirurgias</span></li>
+            <li><span>Parto</span></li>
           </ul>
           {% elif plano_selecionado == 'ambulatorial (pessoa física) - Sem coparticipação, exceto terapias' or plano_selecionado == 'ambulatorial (pessoa física) - Com coparticipação' or plano_selecionado == 'ambulatorial (pessoa jurídica) - Sem coparticipação, exceto terapias' or plano_selecionado == 'ambulatorial (pessoa jurídica) - Com coparticipação'%}
           <ul>
@@ -37,7 +37,7 @@
             <li class="no-mark"><span>Internações</span></li>
             <li class="no-mark"><span>Cirurgias</span></li>
           </ul>
-          {% elif plano_selecionado == 'enfermaria (pessoa jurídica) - Sem coparticipação, exceto terapias' or plano_selecionado == 'enfermaria (pessoa jurídica) - Com coparticipação' or plano_selecionado == 'apartamento (pessoa jurídica) - Sem coparticipação, exceto terapias' or plano_selecionado == 'apartamento (pessoa jurídica) - Com coparticipação'%}
+          {% elif plano_selecionado == 'enfermaria (pessoa jurídica) - Sem coparticipação, exceto terapias' or plano_selecionado == 'enfermaria (pessoa jurídica) - Com coparticipação' or plano_selecionado == 'apartamento (pessoa jurídica) - Sem coparticipação, exceto terapias' or plano_selecionado == 'apartamento (pessoa jurídica) - Com coparticipação' or plano_selecionado == 'nosso medico enfermaria (pessoa jurídica) - Sem coparticipação, exceto terapias' or plano_selecionado == 'nosso medico enfermaria (pessoa jurídica) - Com coparticipação' or plano_selecionado == 'nosso medico apartamento (pessoa jurídica) - Sem coparticipação, exceto terapias' or plano_selecionado == 'nosso medico apartamento (pessoa jurídica) - Com coparticipação'%}
           <ul>
             <li><span>Urgência e emergência</span></li>
             <li><span>Consultas</span></li>
@@ -77,5 +77,14 @@
         </form>
       </div>
     </div>
+    <script>
+        const interval = 120000;
+
+        function refreshPage() {
+            window.location.reload();
+        }
+
+        setInterval(refreshPage, interval);
+    </script>
   </body>
 </html>
