@@ -60,49 +60,49 @@ def cotar():
                 valor = 454.06
             else:
                 valor = 589.17
-        elif plano == 'enfermaria com obstetrícia (pessoa física) - Sem coparticipação, exceto terapias':
+        elif plano == 'enfermaria (pessoa física) - Sem coparticipação, exceto terapias':
             if idade <= 18:
-                valor = 180.30
+                valor = 210.32
             elif idade <= 23:
-                valor = 236.81
+                valor = 276.44
             elif idade <= 28:
-                valor = 271.78
+                valor = 317.35
             elif idade <= 33:
-                valor = 303.95
+                valor = 354.99
             elif idade <= 38:
-                valor = 318.96
+                valor = 372.55
             elif idade <= 43:
-                valor = 359.94
+                valor = 420.50
             elif idade <= 48:
-                valor = 438.31
+                valor = 512.19
             elif idade <= 53:
-                valor = 603.46
+                valor = 705.41
             elif idade <= 58:
-                valor = 813.37
+                valor = 951.01
             else:
-                valor = 1056.27
-        elif plano == 'enfermaria com obstetrícia (pessoa física) - Com coparticipação':
+                valor = 1235.20
+        elif plano == 'enfermaria (pessoa física) - Com coparticipação':
             if idade <= 18:
-                valor = 150.95
+                valor = 175.98
             elif idade <= 23:
-                valor = 198.07
+                valor = 231.11
             elif idade <= 28:
-                valor = 227.22
+                valor = 265.22
             elif idade <= 33:
-                valor = 254.04
+                valor = 296.60
             elif idade <= 38:
-                valor = 266.56
+                valor = 311.24
             elif idade <= 43:
-                valor = 300.73
+                valor = 351.22
             elif idade <= 48:
-                valor = 366.07
+                valor = 427.67
             elif idade <= 53:
-                valor = 503.77
+                valor = 588.77
             elif idade <= 58:
-                valor = 678.79
+                valor = 793.54
             else:
-                valor = 881.31
-        elif plano == 'enfermaria sem obstetrícia (pessoa física) - Sem coparticipação, exceto terapias':
+                valor = 1030.49
+        elif plano == 'nosso medico enfermaria (pessoa física) - Sem coparticipação, exceto terapias':
             if idade <= 18:
                 valor = 141.91
             elif idade <= 23:
@@ -123,7 +123,7 @@ def cotar():
                 valor = 637.32
             else:
                 valor = 827.40
-        elif plano == 'enfermaria sem obstetrícia (pessoa física) - Com coparticipação':
+        elif plano == 'nosso medico enfermaria (pessoa física) - Com coparticipação':
             if idade <= 18:
                 valor = 118.94
             elif idade <= 23:
@@ -144,49 +144,49 @@ def cotar():
                 valor = 532.03
             else:
                 valor = 690.53
-        elif plano == 'apartamento com obstetrícia (pessoa física) - Sem coparticipação, exceto terapias':
+        elif plano == 'apartamento (pessoa física) - Sem coparticipação, exceto terapias':
             if idade <= 18:
-                valor = 203.59
+                valor = 237.57
             elif idade <= 23:
-                valor = 267.55
+                valor = 312.41
             elif idade <= 28:
-                valor = 307.13
+                valor = 358.72
             elif idade <= 33:
-                valor = 343.54
+                valor = 401.32
             elif idade <= 38:
-                valor = 360.53
+                valor = 421.20
             elif idade <= 43:
-                valor = 406.92
+                valor = 475.47
             elif idade <= 48:
-                valor = 495.63
+                valor = 579.26
             elif idade <= 53:
-                valor = 682.56
+                valor = 797.97
             elif idade <= 58:
-                valor = 920.16
+                valor = 1075.96
             else:
-                valor = 1195.10
-        elif plano == 'apartamento com obstetrícia (pessoa física) - Com coparticipação':
+                valor = 1397.64
+        elif plano == 'apartamento (pessoa física) - Com coparticipação':
             if idade <= 18:
-                valor = 170.37
+                valor = 198.70
             elif idade <= 23:
-                valor = 223.70
+                valor = 261.10
             elif idade <= 28:
-                valor = 256.70
+                valor = 299.71
             elif idade <= 33:
-                valor = 287.06
+                valor = 335.23
             elif idade <= 38:
-                valor = 301.23
+                valor = 351.81
             elif idade <= 43:
-                valor = 339.91
+                valor = 397.06
             elif idade <= 48:
-                valor = 413.87
+                valor = 483.60
             elif idade <= 53:
-                valor = 569.73
+                valor = 665.96
             elif idade <= 58:
-                valor = 767.84
+                valor = 897.75
             else:
-                valor = 997.08
-        elif plano == 'apartamento sem obstetrícia (pessoa física) - Sem coparticipação, exceto terapias':
+                valor = 1165.96
+        elif plano == 'nosso medico apartamento (pessoa física) - Sem coparticipação, exceto terapias':
             if idade <= 18:
                 valor = 183.38
             elif idade <= 23:
@@ -207,7 +207,7 @@ def cotar():
                 valor = 827.44
             else:
                 valor = 1074.56
-        elif plano == 'apartamento sem obstetrícia (pessoa física) - Com coparticipação':
+        elif plano == 'nosso medico apartamento (pessoa física) - Com coparticipação':
             if idade <= 18:
                 valor = 153.52
             elif idade <= 23:
@@ -354,6 +354,90 @@ def cotar():
                 valor = 841.69
             else:
                 valor = 942.69
+        elif plano == 'nosso medico enfermaria (pessoa jurídica) - Sem coparticipação, exceto terapias':
+            if idade <= 18:
+                valor = 122.61
+            elif idade <= 23:
+                valor = 137.32
+            elif idade <= 28:
+                valor = 153.80
+            elif idade <= 33:
+                valor = 176.87
+            elif idade <= 38:
+                valor = 203.40
+            elif idade <= 43:
+                valor = 242.05
+            elif idade <= 48:
+                valor = 302.56
+            elif idade <= 53:
+                valor = 378.20
+            elif idade <= 58:
+                valor = 642.94
+            else:
+                valor = 720.09
+        elif plano == 'nosso medico enfermaria (pessoa jurídica) - Com coparticipação':
+            if idade <= 18:
+                valor = 99.05
+            elif idade <= 23:
+                valor = 110.94
+            elif idade <= 28:
+                valor = 124.25
+            elif idade <= 33:
+                valor = 142.89
+            elif idade <= 38:
+                valor = 164.32
+            elif idade <= 43:
+                valor = 195.54
+            elif idade <= 48:
+                valor = 244.43
+            elif idade <= 53:
+                valor = 305.54
+            elif idade <= 58:
+                valor = 519.42
+            else:
+                valor = 581.75
+        elif plano == 'nosso medico apartamento (pessoa jurídica) - Sem coparticipação, exceto terapias':
+            if idade <= 18:
+                valor = 183.16
+            elif idade <= 23:
+                valor = 205.14
+            elif idade <= 28:
+                valor = 229.76
+            elif idade <= 33:
+                valor = 264.22
+            elif idade <= 38:
+                valor = 303.85
+            elif idade <= 43:
+                valor = 361.58
+            elif idade <= 48:
+                valor = 451.98
+            elif idade <= 53:
+                valor = 564.98
+            elif idade <= 58:
+                valor = 960.47
+            else:
+                valor = 1075.73
+        elif plano == 'nosso medico apartamento (pessoa jurídica) - Com coparticipação':
+            if idade <= 18:
+                valor = 147.80
+            elif idade <= 23:
+                valor = 165.54
+            elif idade <= 28:
+                valor = 185.40
+            elif idade <= 33:
+                valor = 213.21
+            elif idade <= 38:
+                valor = 245.19
+            elif idade <= 43:
+                valor = 291.78
+            elif idade <= 48:
+                valor = 364.73
+            elif idade <= 53:
+                valor = 455.91
+            elif idade <= 58:
+                valor = 775.05
+            else:
+                valor = 868.06
         else:
             return 'Plano inválido'
 
